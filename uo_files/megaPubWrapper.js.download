@@ -1,0 +1,19 @@
+$(document).ready( function(){
+
+if( $('.school-dropdown-col').length > 1 ){
+  $('#pubWrapper').addClass('mega-pub');
+    
+  var colNum = $('.school-dropdown-col').length;
+
+  $('.school-dropdown-col').css('width', 100 / colNum + '%');
+
+  $(window).resize( function(){
+
+    var pubWid = $('#pubWrapper .container').width();
+
+    $('ul.schoolDropdown').width( pubWid );
+  });
+    
+}
+
+});

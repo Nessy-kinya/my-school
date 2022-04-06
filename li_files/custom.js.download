@@ -1,0 +1,56 @@
+
+jQuery(function ($) {
+ 
+	var $button = $('#burger');
+	var $navLinkWrapper = $('.nav__link-wrapper');
+
+	$button.on('click', function(e) {
+	  e.preventDefault();
+	  $button.find('.nav__burger-inner').toggleClass('active');
+	  $navLinkWrapper.toggleClass('expanded');
+	})
+	
+
+	$("#carouselDepartment").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      autoPlay : true,
+      responsiveClass:true,
+      pagination:false,
+      responsive:{
+          0:{
+              items:5
+             
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:1,
+              autoPlay : 2500,
+          }
+      }
+    });
+    
+
+	
+	 $("#gallery").owlCarousel({
+	       items: 1,
+	       loop:true,
+	       center:true,
+	       pagination:false,
+	       autoPlay : 2500,
+	       stopOnHover : true
+	     });
+	     
+	     jQuery(".next").click(function() {
+	       owl.trigger('owl.next');
+	     })
+	     
+	     jQuery(".prev").click(function() {
+	       owl.trigger('owl.prev');
+	     })
+
+
+})

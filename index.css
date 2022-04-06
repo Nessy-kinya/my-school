@@ -1,0 +1,72 @@
+*{box-sizing: border-box;}
+/*Add a black background color to navigation */
+.topnav{
+  background-color: black;
+  overflow: hidden;
+}
+/*style the links inside the navigation bar */
+.topnav a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color: white;
+  color:black;
+}
+header{
+  color: white;
+  background-color: blue;
+  padding: 40px;
+  text-align: center;
+  font-size: 40px;font-weight:bold;
+  text-transform: uppercase;
+}
+header::first-letter{font-size: 50px;}
+#sidenav{
+  background-color: orange;
+  float: left;width: 30%;
+  height: 400px;
+}
+ul{list-style-type: none;
+
+}
+li{
+  height: 45px;font-style:italic;
+}
+a{color: white;
+  .0 nb                                                                                                                                                                                                        n
+padding: 10px;}
+#ar{background-color: green;
+color: white;
+height: 400px;
+float: right;
+width: 70%;
+}
+footer p{background-color: black;
+color: white;
+padding: 60px;
+text-align: center;
+}
+#image{
+  float: none;width: 100%;
+  height:auto;
+
+}
+#makediv50{
+  min-height: 500px;
+}
+#my image{
+  position: relative;
+  top:100px;
+}
+*{
+  font-family: 'Beau Rivage', cursive;
+}
+.nk{
+  position: relative;
+  top: 100px;
+}
